@@ -35,19 +35,6 @@
 }
 
 
-/*========== Responsive typography ==========*/
-@media screen and (min-width: 1152px) {
-  :root {
-    --biggest-font-size: 5.5rem;
-    --h1-font-size: 2.5rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
-  }
-}
-
 /*=============== BASE ===============*/
 * {
   box-sizing: border-box;
@@ -68,7 +55,7 @@ input {
 }
 
 body {
-  background-color: var(--body-color);
+  background-color: #1A1716;
 }
 
 button,
@@ -97,44 +84,44 @@ img {
   height: auto;
 }
 
-/*=============== REUSABLE CSS CLASSES ===============*/
-.container {
-  max-width: 1120px;
-  margin-inline: 1.5rem;
-}
-
-.grid {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.section {
-  padding-block: 5rem 1rem;
-}
-
-.section__title {
-  text-align: center;
-  font-size: var(--h1-font-size);
-  margin-bottom: 1.5rem;
-}
-
-.main {
-  overflow: hidden; /* For animation ScrollReveal */
-}
-
 /* CUPON RECTANGLE  START */
-
 .cupon {
     width: 100%;
     height: 40px;
     background-color: var(--alerta-bar-color);
     text-align: center;
     color: var(--text-white-color);
+    text-align: center;
     justify-content: center;
     align-items: center;
     display: flex;
 }
 
 #porcento {
-    background: linear-gradient(to right, #AF363B -3.41%, #EEC035 34.21%);
+    color: #EEC035;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search1 {
+    display: flex;
+    align-items: center;
+    width: 680px;
+    height: 45px;
+    border: 2px solid #CCC6C44D;
+    color: var(--text-white-color);
+}
+
+.texto {
+    width: 62px;
+    height: 13px;
+    top: 68px;
+    left: 388px;
+    line-height: 18.75px;
+    display: flex;
+    align-items: center;
 }
